@@ -2,7 +2,7 @@
    GLOBAL / BACKGROUND
 ========================= */
 body {
-   background-image: url("../bg/BG2.png");
+   background-image: url("bg/BG2.png");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
