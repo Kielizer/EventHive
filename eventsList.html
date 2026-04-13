@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../css/appointmentListDesign.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">AppointSys</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+             <li class="nav-item">
+          <a class="nav-link" href="eventsList.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About Us.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h2 class="title">Events List</h2>
+
+<table class="data_table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Appointment Date</th>
+      <th>Appointment Time</th>
+    </tr>
+  </thead>
+
+  <tbody id="appointmentTable">
+    <!-- JS will insert rows here -->
+  </tbody>
+</table>
+
+</html>

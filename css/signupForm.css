@@ -1,0 +1,107 @@
+/* ---------------------------
+   BODY & FONT
+--------------------------- */
+body {
+    background-image: url("../bg/BG2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 110vh;
+    font-family: 'Conthrax', sans-serif;
+}
+
+/* ---------------------------
+   FONT FACE
+--------------------------- */
+@font-face {
+    font-family: 'Conthrax';
+    src: url('../font/Conthrax-SemiBold.otf') format('opentype');
+}
+
+/* ---------------------------
+   SIGNUP FORM CONTAINER
+--------------------------- */
+.signupForm {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.7);
+    border: 2px solid #8400ff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(132, 0, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+}
+
+/* ---------------------------
+   TITLE
+--------------------------- */
+.signupForm h2 {
+    color: #8400ff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ---------------------------
+   FORM INPUTS
+--------------------------- */
+.signupForm input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid #8400ff;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.signupForm input::placeholder {
+    color: #8400ff;
+}
+
+/* ---------------------------
+   BUTTON
+--------------------------- */
+.signupForm .button {
+    background-color: #8400ff;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.signupForm .button:hover {
+    background-color: white;
+    color: #8400ff;
+    border: 1px solid #8400ff;
+}
+
+/* ---------------------------
+   FOOTER / LOGIN LINK
+--------------------------- */
+.signupForm p {
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.signupForm p a {
+    color: #8400ff;
+    text-decoration: none;
+}
+
+.signupForm p a:hover {
+    text-decoration: underline;
+}

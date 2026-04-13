@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../css/adminDesign.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Residency</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+             <li class="nav-item">
+          <a class="nav-link" href="appointmentList.html">Appointments</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="crud_container">
+
+    <form id="appointmentForm" class="form">
+
+    <table class="data_table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Appointment Date</th>
+      <th>Appointment Time</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+<tbody id="appointmentTable">
+    <!-- JS will insert rows here, and the "Mark as Done" button will be inside the table -->
+    <!-- Example of how a row will look -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><button onclick="markAsDone(1)">Mark as Done</button></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<script src="adminDatabase.js"></script>
+  <script src="authUser.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* =========================
+   GLOBAL / BACKGROUND
+========================= */
+body {
+   background-image: url("../bg/BG2.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+   margin: 0;
+}
+
+/* =========================
+   FONT
+========================= */
+@font-face {
+    font-family: 'Conthrax';
+    src: url('../font/Conthrax-SemiBold.otf') format('opentype');
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar-custom {
+    background-color: transparent !important;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .nav-link.active {
+    color: white !important;
+    font-family: 'Conthrax';
+}
+
+/* Brand always purple */
+.navbar-custom .navbar-brand {
+    color: #8400ff !important;
+}
+
+/* Hover effect */
+.navbar-custom .nav-link:hover {
+    color: #8400ff !important;
+}
+
+/* Search box */
+.navbar-custom .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #8400ff;
+}
+
+.navbar-custom .form-control::placeholder {
+    color: #8400ff;
+}
+
+/* Buttons */
+.navbar-custom .btn {
+    color: white !important;
+    border-color: #8400ff !important;
+    margin: 0 5px;
+}
+
+.navbar-custom .btn:hover {
+    background-color: black !important;
+    color: #8400ff !important;
+}
+
+/* =========================
+   HERO TEXT CONTAINER
+========================= */
+.txt_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Conthrax';
+    padding-top: 20vh;
+}
+
+/* Button */
+.txt_Container button {
+    background: #8400ff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Conthrax';
+    cursor: pointer;
+    margin-top: 40px;
+    width: auto;
+    min-width: 150px;
+    max-width: 250px;
+    transition: 0.3s ease;
+}
+
+.txt_Container button:hover {
+    background: black;
+    color: #8400ff;
+    border: 1px solid #8400ff;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+.recorded_residents {
+    font-family: 'Conthrax';
+    color: #8400ff;
+    font-size: clamp(24px, 5vw, 50px);
+    text-align: center;
+    margin-top: 120px;
+    letter-spacing: 2px;
+}
+
+/* =========================
+   📱 RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .txt_Container {
+        padding-top: 15vh;
+    }
+
+    .txt_Container button {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .recorded_residents {
+        font-size: 28px;
+        margin-top: 80px;
+    }
+
+    .navbar-custom .nav-link {
+        font-size: 14px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+
+    .txt_Container {
+        padding-top: 10vh;
+    }
+
+    .txt_Container button {
+        width: 90%;
+    }
+
+    .recorded_residents {
+        font-size: 22px;
+    }
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 2000; /* VERY IMPORTANT */
+}
+
+.menu-toggle span {
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+}
+
+/* SIDE MENU */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.side-menu a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    background: #8400ff;
+}
+
+.side-menu.active {
+    right: 0;
+}
+
+/* OVERLAY */
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+#overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
