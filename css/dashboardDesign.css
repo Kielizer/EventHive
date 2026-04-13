@@ -15,7 +15,7 @@ body {
 ========================= */
 @font-face {
     font-family: 'Conthrax';
-    src: url('../font/Conthrax-SemiBold.otf') format('opentype');
+    src: url('font/Conthrax-SemiBold.otf') format('opentype');
 }
 
 /* =========================
