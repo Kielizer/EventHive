@@ -169,7 +169,7 @@ body {
     position: absolute;
     right: 20px;
     top: 20px;
-    z-index: 2000; /* VERY IMPORTANT */
+    z-index: 1000;
 }
 
 .menu-toggle span {
